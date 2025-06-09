@@ -19,74 +19,57 @@
 </head>
 <body>
     <audio id="audio-bosnian">
-        <source src="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/ttsmaker-file-2025-3-9-14-56-44.mp3?v=1741529322428" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/saracen7mi/djevojackapecina/main/djevojackapecinabosanski.mp3" type="audio/mpeg">
     </audio>
     <audio id="audio-english">
-        <source src="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/ttsmaker-file-2025-3-9-14-59-12.mp3?v=1741529450717" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/saracen7mi/djevojackapecina/main/djevojackapecinaengleski.mp3" type="audio/mpeg">
     </audio>
     <audio id="audio-german">
-        <source src="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/ttsmaker-file-2025-3-9-15-1-22.mp3?v=1741529496340" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/saracen7mi/djevojackapecina/main/djevojackapecinanjemacka.mp3" type="audio/mpeg">
     </audio>
     <audio id="audio-italian">
-        <source src="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/ttsmaker-file-2025-3-9-15-3-59.mp3?v=1741529535171" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/saracen7mi/djevojackapecina/main/djevojackapecinaitalijanski.mp3" type="audio/mpeg">
     </audio>
     <audio id="audio-turkish">
-        <source src="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/ttsmaker-file-2025-3-9-15-5-57.mp3?v=1741529567896" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/saracen7mi/djevojackapecina/main/djevojackapecinaturski.mp3" type="audio/mpeg">
     </audio>
-
-  
     <a-scene embedded arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;">
         <a-plane color="#008000" height="3.5" width="6.5" position="0 0.5 -5" opacity="0.9"></a-plane>
-
-       <a-entity 
-            gltf-model="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/grbopstine3d.glb?v=1741530029502" 
+        <a-entity 
+            gltf-model="https://cdn.jsdelivr.net/gh/saracen7mi/djevojackapecina@main/grbOpstine.glb" 
             position="-2 1 -5" 
             scale="1 1 1" 
             rotation="0 240 0" 
             animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
         </a-entity>
-
-      <a-entity 
-    gltf-model="https://cdn.glitch.global/db0d9e1b-0954-44a9-befd-b3e32ca0c938/grbdrzave3d.glb?v=1741530100598" 
-    position="2 1 -5" 
-    scale="1 1 1" 
-    rotation="0 240 0" 
-    animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
-</a-entity>
-      
-      
-      
-  
-
-<a-entity id="eng-button" geometry="primitive: plane; height: 0.5; width: 1.5"
-          material="color: red" position="-2.5 2 -4.9"
-          text="value: ENG; color: white; align: center; width: 3;">
-</a-entity>
-
-<a-entity id="deu-button" geometry="primitive: plane; height: 0.5; width: 1.5"
-          material="color: yellow" position="-1 2 -4.9"
-          text="value: DEU; color: black; align: center; width: 3;">
-</a-entity>
-
-<a-entity id="ita-button" geometry="primitive: plane; height: 0.5; width: 1.5"
-          material="color: blue" position="0.5 2 -4.9"
-          text="value: ITA; color: white; align: center; width: 3;">
-</a-entity>
-
-<a-entity id="tur-button" geometry="primitive: plane; height: 0.5; width: 1.5"
-          material="color: brown" position="2 2 -4.9"
-          text="value: TUR; color: white; align: center; width: 3;">
-</a-entity>
-
-
+        <a-entity 
+            gltf-model="https://cdn.jsdelivr.net/gh/saracen7mi/djevojackapecina@main/grbOpstine.glb" 
+            position="2 1 -5" 
+            scale="1 1 1" 
+            rotation="0 240 0" 
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+        </a-entity>
+        <a-entity id="eng-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+                  material="color: red" position="-2.5 2 -4.9"
+                  text="value: ENG; color: white; align: center; width: 3;">
+        </a-entity>
+        <a-entity id="deu-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+                  material="color: yellow" position="-1 2 -4.9"
+                  text="value: DEU; color: black; align: center; width: 3;">
+        </a-entity>
+        <a-entity id="ita-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+                  material="color: blue" position="0.5 2 -4.9"
+                  text="value: ITA; color: white; align: center; width: 3;">
+        </a-entity>
+        <a-entity id="tur-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+                  material="color: brown" position="2 2 -4.9"
+                  text="value: TUR; color: white; align: center; width: 3;">
+        </a-entity>
         <a-entity position="0 0.8 -4.9">
             <a-text value=" Jedno od najzanimljivijih speleoloskih nalazista u Bosni i Hercegovini smjesteno je u naselju Brateljevici, gdje se nalazi poznata Djevojacka pecina. Ulaz u pecinu je iznad desne obale rijeke Bukovice. Prema legendi, djevojka je sa vretenom i ibrikom otisla u pecinu po vodu, a braca su cekala njen povratak. Medjutim, ona je ostala u pecini zauvijek. Gravure na stijeni unutar Djevojacke pecine privlace veliku paznju arheologa i kulturnih povjesnicara. Odredjeni elementi na tim crtezima ukazuju na njihovu srednjovjekovnu provenijenciju, a medju likovima se mogu jasno razaznati tri vrste: konjanici, stojece figure i zivotinje koje nalikuju jelenima. Ova pecina ima dugu tradiciju, te je jedno od najpoznatijih i najposjecenijih dovista, narocito tokom utorka odrzavanih jurijevskih dova, na koje hodocaste Bosnjaci iz Kladnja, Drine, Posavine, ali i Srednje Bosne. Manifestacija pod nazivom „Dani Djevojacke pecine“ postala je vazan dogadjaj koji afirmira tradiciju i kulturu ovog kraja. "
                     color="#FFFF00" width="5.5" wrap-count="50" align="center" scale="0.5 0.5 0.5">
             </a-text>
         </a-entity>
-
-         
-        <!-- Dodani tekst ispod žutog teksta -->
         <a-entity position="0 -0.8 -4.9" id="location-link">
             <a-text 
                 value="Lokacija:" 
@@ -96,96 +79,83 @@
                 scale="1.2 1.4 1.4"
                 letter-spacing="1">
             </a-text>
-           <!-- Crvena pozadina samo za "Klikni ovde" -->
-    <a-plane 
-        color="#FF0000" 
-        height="0.5" 
-        width="1.6" 
-        opacity="0.5" 
-        position="-0.3 0 0.06">
-    </a-plane>
-
-    <!-- "Klikni ovde" na crvenoj pozadini -->
-    <a-text 
-        value="Klikni ovde" 
-        position="-0.4 0 0.06"  
-        color="#000000"
-        align="center"
-        scale="1.2 1.2 1.2" 
-        letter-spacing="1"
-        class="clickable">
-    </a-text>
-          
-          
+            <a-plane 
+                color="#FF0000" 
+                height="0.5" 
+                width="1.6" 
+                opacity="0.5" 
+                position="-0.3 0 0.06">
+            </a-plane>
+            <a-text 
+                value="Klikni ovde" 
+                position="-0.4 0 0.06"  
+                color="#000000"
+                align="center"
+                scale="1.2 1.2 1.2" 
+                letter-spacing="1"
+                class="clickable">
+            </a-text>
         </a-entity>
-      
-      
-      
-      
-      
-      
-        <a-entity 
-            gltf-model="" 
-            position="-2 1 -5" 
-            scale="0.5 0.5 0.5" 
-            rotation="0 240 0" 
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
-        </a-entity>
-
-        <a-entity 
-            gltf-model="" 
-            position="2 1 -5" 
-            scale="0.5 0.5 0.5" 
-            rotation="0 240 0" 
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
-        </a-entity>
-
         <a-entity camera look-controls position="0 0 0" fov="85">
             <a-cursor color="#FF0000" radius="0.05"></a-cursor>
         </a-entity>
     </a-scene>
-
     <script>
         let bosnianAudio = document.getElementById('audio-bosnian');
         let englishAudio = document.getElementById('audio-english');
         let germanAudio = document.getElementById('audio-german');
         let italianAudio = document.getElementById('audio-italian');
         let turkishAudio = document.getElementById('audio-turkish');
-
         function stopAllAudio() {
             [bosnianAudio, englishAudio, germanAudio, italianAudio, turkishAudio].forEach(audio => {
                 audio.pause();
                 audio.currentTime = 0;
             });
         }
-
         function playAudio(audioElement) {
+            if (!audioElement || !audioElement.src) {
+                console.warn('Audio element nije definisan ili nema izvor.');
+                return;
+            }
             stopAllAudio();
-            audioElement.play();
+            audioElement.play().then(() => {
+                console.log('Audio pokrenut:', audioElement.id);
+            }).catch(error => {
+                console.warn('Reprodukcija nije uspjela:', error);
+            });
         }
-
         document.getElementById('eng-button').addEventListener('mouseenter', () => playAudio(englishAudio));
         document.getElementById('deu-button').addEventListener('mouseenter', () => playAudio(germanAudio));
         document.getElementById('ita-button').addEventListener('mouseenter', () => playAudio(italianAudio));
         document.getElementById('tur-button').addEventListener('mouseenter', () => playAudio(turkishAudio));
-
-        // window.addEventListener('load', () => {
-        //     bosnianAudio.play().catch(e => console.log("Audio autoplay blokiran: " + e));
-        // });
-      
-      window.addEventListener('load', () => {
-    document.body.addEventListener('click', () => {
-        if (bosnianAudio.paused) {
-            bosnianAudio.play();
-        }
-    }, { once: true }); // Pokreće se samo jednom
-});
-
-       document.getElementById('location-link').addEventListener('click', () => {
-    window.location.href = 'https://www.google.com/maps/dir/?api=1&destination= 44.214400267771914, 18.645647348832643  &travelmode=driving';
-});
-      
-      
+        window.addEventListener('load', () => {
+            document.body.addEventListener('click', () => {
+                if (bosnianAudio.paused) {
+                    playAudio(bosnianAudio);
+                }
+            }, { once: true });
+        });
+        document.getElementById('location-link').addEventListener('click', () => {
+            window.location.href = 'https://www.google.com/maps/dir/?api=1&destination=44.214400267771914,18.645647348832643&travelmode=driving';
+        });
+        // Dodaj dijagnostiku za modele
+        document.querySelectorAll('a-entity[gltf-model]').forEach(entity => {
+            entity.addEventListener('model-loaded', () => {
+                console.log('Model učitan:', entity.getAttribute('gltf-model'));
+            });
+            entity.addEventListener('model-error', (e) => {
+                console.error('Greška pri učitavanju modela:', e.detail, entity.getAttribute('gltf-model'));
+            });
+        });
+        // Dodaj dijagnostiku za audio
+        document.querySelectorAll('audio').forEach(audio => {
+            audio.addEventListener('loadeddata', () => {
+                console.log('Audio učitan:', audio.id);
+            });
+            audio.addEventListener('error', (e) => {
+                console.error('Greška pri učitavanju audio:', audio.id, e);
+            });
+        });
     </script>
 </body>
 </html>
